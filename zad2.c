@@ -52,7 +52,7 @@ int main(void) {
     while(1) {
         value_poten = ADC_Read10bit(ADC_CHANNEL_POTENTIOMETER);
 
-        ok = value_poten / 205; //1024 / 5 = 204.8  zaokr?glamy w dó? do 205, ?eby równo podzieli? zakres.
+        ok = value_poten / 204; //1024 / 5 = 204.8  zaokr?glamy w dó? do 204, ?eby równo podzieli? zakres.
         switch(ok) {
             case 0: opoznienie = 100000;    break;
             case 1: opoznienie = 300000;    break;
