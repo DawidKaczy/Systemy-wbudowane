@@ -31,7 +31,8 @@ int main(void) {
     init();
 
     unsigned long value_poten;
-    unsigned int nastawa = 512;     //po?owa
+    //1024 / 2
+    unsigned int nastawa = 512;
     int alarm = 0;                  
     int miganie = 0;        
 
@@ -46,6 +47,7 @@ int main(void) {
 
             for (int i = 0; i < 5; i++) 
             {
+                //trzeba dodać żeby podczas mrygania też zczytywał wartości i mozna było wyłączyć podczas mrygania
                 value_poten = ADC_Read10bit(ADC_CHANNEL_POTENTIOMETER);
                 if (value_poten <= nastawa || BUTTON_IsPressed(BUTTON_S4)) 
                 {
