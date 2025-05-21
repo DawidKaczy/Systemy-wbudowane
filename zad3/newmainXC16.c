@@ -72,7 +72,7 @@ int main(void) {
             LATA = 0xFF;
         }
         //jak potencjometr jest poni?ej po?owy to ga?nie wszystko
-        if (alarm == 1 && value_poten <= nastawa) 
+        if (value_poten <= nastawa) 
         {
             alarm = 0;
             LATA = 0x00;
