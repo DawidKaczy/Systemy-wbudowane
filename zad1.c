@@ -17,7 +17,7 @@
 #pragma config JTAGEN = OFF             // JTAG Port Enable (JTAG port is disabled)
 #include <xc.h>
 int main(void) {
-    unsigned portValue = 0x01;
+    unsigned char portValue = 0x01;
     unsigned portValue1 = 0x0007;
     char current6 = 0, prev6 = 0;
     char current13 = 0, prev13 = 0;
